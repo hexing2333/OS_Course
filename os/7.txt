@@ -1,0 +1,4 @@
+M 2
+Y 3
+W /root/personal/hw/hw1/lalala 5
+Q

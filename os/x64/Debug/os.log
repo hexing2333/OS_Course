@@ -1,0 +1,8 @@
+﻿  process.cpp
+c:\users\hexing\desktop\os_new\os\global.h(73): warning C4091: “typedef ”: 没有声明变量时忽略“mutexInfo”的左侧
+c:\users\hexing\desktop\os_new\os\state.h(30): warning C4005: “IN”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\minwindef.h(79): note: 参见“IN”的前一个定义
+c:\users\hexing\desktop\os_new\os\state.h(31): warning C4005: “OUT”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\minwindef.h(83): note: 参见“OUT”的前一个定义
+c:\users\hexing\desktop\os_new\os\process.cpp(400): warning C4018: “<”: 有符号/无符号不匹配
+  os.vcxproj -> C:\Users\hexing\Desktop\OS_new\x64\Debug\os.exe

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, idivnitial-scale=1.0">
+    <title>操作系统课程设计</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="./layui/css/layui.css">
+    <script src="./layui/layui.js"></script>
+</head>
+
+<body>
+    <div id="first">
+        <div id="second_1" style="justify-content:center">
+            <div id="third_1" style="margin-left:1%;-webkit-app-region: drag;">
+
+                <!-- 主控时钟 -->
+                <div style="width: 40%;display: flex;flex-direction: row;justify-content: flex-start;">
+                    <i class="layui-icon layui-icon-time" style="font-size: 30px; color: #777777;margin-top: 2px;"></i>
+                    <p style="font-size: 25px; color: #777777;margin-left: 5px;" id="main_clock">主控时钟: 0</p>
+                </div>
+
+                <!-- 系统启动 -->
+                <div style="width: 60%;display: flex;flex-direction: row;justify-content: flex-end;">
+                    <select id="al_select" style="margin-right: 10px;">
+                        <option value ="1">PRO</option>
+                        <option value ="2">RR</option>
+                        <option value="3">FCFS</option>
+                      </select>
+                    <button type="button" id="start" class="layui-btn layui-btn-lg layui-btn-radius layui-btn-normal" style="margin-right: 2%;-webkit-app-region: no-drag;" onclick="system_start()">启动系统</button>
+                    <button type="button" id="stop" class="layui-btn layui-btn-lg layui-btn-radius layui-btn-disabled" style="margin-right: 2%;-webkit-app-region: no-drag;" onclick="system_stop()">关闭系统</button>
+                    <button type="button" id="add" class="layui-btn layui-btn-lg layui-btn-radius layui-btn-normal" style="margin-right: 2%;-webkit-app-region: no-drag;" onclick="add_device()">添加设备</button>
+                    <button type="button" id="add" class="layui-btn layui-btn-lg layui-btn-radius layui-btn-normal" style="margin-right: 2%;-webkit-app-region: no-drag;" onclick="deleted_device()">删除设备</button>
+                </div>
+
+            </div>
+
+        </div>
+        <div id="second_2">
+            <!-- 界面左侧 -->
+            <div style="width: 55%;height: 100%;display: flex;flex-direction: column;justify-content: space-around;">
+                 <!-- 设备管理器 -->
+                 <div style="height: 35%;width:95%;margin-left: auto;margin-right: auto;background-color: rgb(255, 255, 255);border-radius:15px ;">
+                    <div id="equip_manager" style="height: 100%; display: flex;flex-direction: column;">
+                        <fieldset class="layui-elem-field layui-field-title " style="width: 95%; margin-left: 1.1%; ">
+                            <legend>设备管理器</legend>
+                        </fieldset>
+                        <div style="height: 160px; width: 512px;overflow:auto;">
+                            <table id="customers">
+                                <tr>
+                                    <th>设备名称</th>
+                                    <th>设备状态</th>
+                                    <th>占用进程</th>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <!-- 内存磁盘占用块 -->
+                <div style="height: 40%;width:95%;margin-left: auto;margin-right: auto; flex-direction: column;background-color:rgb(255, 255, 255);border-radius:15px ;">
+                    <fieldset class="layui-elem-field layui-field-title " style="width: 95%; margin-left: 1.1%; ">
+                        <legend>内存磁盘占用块</legend>
+                    </fieldset>
+                    <div style="width: 98%; height: 50%;margin-left: auto;margin-right: auto; display: flex;flex-direction: column;">
+                        <h3 style="margin-top:20px">内存</h3>
+                        <div id="memory_block"style="height: 50%; display: flex;flex-direction: row;justify-content:space-around">
+                            <div style="background-color:rgb(145, 241, 241);width:3%"></div>
+                            <div style="background-color:rgb(145, 241, 241);width:3%"></div>
+                            <div style="background-color:rgb(145, 241, 241);width:3%"></div>
+                            <div style="background-color:rgb(145, 241, 241);width:3%"></div>
+                            <div style="background-color:rgb(145, 241, 241);width:3%"></div>
+                            <div style="background-color:rgb(145, 241, 241);width:3%"></div>
+                            <div style="background-color:rgb(145, 241, 241);width:3%"></div>
+                            <div style="background-color:rgb(145, 241, 241);width:3%"></div>
+                            <div style="background-color:rgb(145, 241, 241);width:3%"></div>
+                            <div style="background-color:rgb(145, 241, 241);width:3%"></div>
+                            <div style="background-color:rgb(145, 241, 241);width:3%"></div>
+                            <div style="background-color:rgb(145, 241, 241);width:3%"></div>
+                            <div style="background-color:rgb(145, 241, 241);width:3%"></div>
+                            <div style="background-color:rgb(145, 241, 241);width:3%"></div>
+                            <div style="background-color:rgb(145, 241, 241);width:3%"></div>
+                            <div style="background-color:rgb(145, 241, 241);width:3%"></div>
+                            <div style="background-color:rgb(145, 241, 241);width:3%"></div>
+                            <div style="background-color:rgb(145, 241, 241);width:3%"></div>
+                            <div style="background-color:rgb(145, 241, 241);width:3%"></div>
+                            <div style="background-color:rgb(145, 241, 241);width:3%"></div>
+                            <div style="background-color:rgb(145, 241, 241);width:3%"></div>
+                            <div style="background-color:rgb(145, 241, 241);width:3%"></div>
+                            <div style="background-color:rgb(145, 241, 241);width:3%"></div>
+                            <div style="background-color:rgb(145, 241, 241);width:3%"></div>
+                            <div style="background-color:rgb(145, 241, 241);width:3%"></div>
+                            <div style="background-color:rgb(145, 241, 241);width:3%"></div>
+                            <div style="background-color:rgb(145, 241, 241);width:3%"></div>
+                            <div style="background-color:rgb(145, 241, 241);width:3%"></div>
+                            <div style="background-color:rgb(145, 241, 241);width:3%"></div>
+                            <div style="background-color:rgb(145, 241, 241);width:3%"></div>
+                            <div style="background-color:rgb(145, 241, 241);width:3%"></div>
+                            <div style="background-color:rgb(145, 241, 241);width:3%"></div>
+                        </div>
+                        <h3>磁盘</h3>
+                        <div id="disk_block" style="height: 50%; display: flex;flex-direction: row;justify-content:space-around">
+                            <div style="background-color:rgb(247, 209, 152);width:3%"></div>
+                            <div style="background-color:rgb(247, 209, 152);width:3%"></div>
+                            <div style="background-color:rgb(247, 209, 152);width:3%"></div>
+                            <div style="background-color:rgb(247, 209, 152);width:3%"></div>
+                            <div style="background-color:rgb(247, 209, 152);width:3%"></div>
+                            <div style="background-color:rgb(247, 209, 152);width:3%"></div>
+                            <div style="background-color:rgb(247, 209, 152);width:3%"></div>
+                            <div style="background-color:rgb(247, 209, 152);width:3%"></div>
+                            <div style="background-color:rgb(247, 209, 152);width:3%"></div>
+                            <div style="background-color:rgb(247, 209, 152);width:3%"></div>
+                            <div style="background-color:rgb(247, 209, 152);width:3%"></div>
+                            <div style="background-color:rgb(247, 209, 152);width:3%"></div>
+                            <div style="background-color:rgb(247, 209, 152);width:3%"></div>
+                            <div style="background-color:rgb(247, 209, 152);width:3%"></div>
+                            <div style="background-color:rgb(247, 209, 152);width:3%"></div>
+                            <div style="background-color:rgb(247, 209, 152);width:3%"></div>
+                            <div style="background-color:rgb(247, 209, 152);width:3%"></div>
+                            <div style="background-color:rgb(247, 209, 152);width:3%"></div>
+                            <div style="background-color:rgb(247, 209, 152);width:3%"></div>
+                            <div style="background-color:rgb(247, 209, 152);width:3%"></div>
+                            <div style="background-color:rgb(247, 209, 152);width:3%"></div>
+                            <div style="background-color:rgb(247, 209, 152);width:3%"></div>
+                            <div style="background-color:rgb(247, 209, 152);width:3%"></div>
+                            <div style="background-color:rgb(247, 209, 152);width:3%"></div>
+                            <div style="background-color:rgb(247, 209, 152);width:3%"></div>
+                            <div style="background-color:rgb(247, 209, 152);width:3%"></div>
+                            <div style="background-color:rgb(247, 209, 152);width:3%"></div>
+                            <div style="background-color:rgb(247, 209, 152);width:3%"></div>
+                            <div style="background-color:rgb(247, 209, 152);width:3%"></div>
+                            <div style="background-color:rgb(247, 209, 152);width:3%"></div>
+                            <div style="background-color:rgb(247, 209, 152);width:3%"></div>
+                            <div style="background-color:rgb(247, 209, 152);width:3%"></div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- 内存磁盘占用率 -->
+                <div style="height: 30%;width:95%;margin-left: auto;margin-right: auto;background-color: rgb(255, 255, 255);border-radius:15px ;display: flex;flex-direction: column;justify-content:center; ">
+                    <fieldset class="layui-elem-field layui-field-title " style="width: 95%; margin-left: 1.1%; ">
+                        <legend>内存使用率</legend>
+                    </fieldset>
+                    <div class="layui-progress layui-progress-big" lay-showpercent="true" lay-filter="memory_usage" style="width: 95%; margin-left: 1.1%;">
+                        <div class="layui-progress-bar layui-bg-red " lay-percent="0% "></div>
+                    </div>
+
+                    <fieldset class="layui-elem-field layui-field-title " style="width: 95%; margin-left: 1.1%; ">
+                        <legend>磁盘使用率</legend>
+                    </fieldset>
+                    <div class="layui-progress layui-progress-big" lay-showpercent="true" lay-filter="disk_usage" style="width: 95%; margin-left: 1.1%;">
+                        <div class="layui-progress-bar layui-bg-blue " lay-percent="0% "></div>
+                    </div>
+                </div>
+                
+                
+               
+            </div>
+            <!-- 界面右侧 -->
+            <div style="width: 55%;height: 100%;display: flex;flex-direction: column;justify-content: space-around;overflow: hidden; ">
+                <div style="height: 45%; width:95%;margin-left: auto;margin-right: auto;background-color: rgb(255, 255, 255);display:flex;flex-direction: row;border-radius:15px ;">
+                <!-- 目录树 -->
+                <div id="file_tree" style="height: 95%; width:50%;margin-left: auto;margin-right: auto;background-color: rgb(255, 255, 255);flex-direction: column;border-radius:15px ;">
+                    <fieldset class="layui-elem-field layui-field-title " style="width: 95%; margin-left: 1.1%; ">
+                        <legend>目录树</legend>
+                    </fieldset>
+                    <div id="tree" style="margin-left: 5%;height: 220px; width: 460px;">
+                    </div>
+                </div>
+                    <!-- 进程执行状态 -->
+                <div id="proc_state_out" style="height: 95%; width:50%;margin-left: auto;margin-right: auto;background-color: rgb(255, 255, 255);flex-direction: column;border-radius:15px ;">
+                    <fieldset class="layui-elem-field layui-field-title " style="width: 95%; margin-left: 1.1%; ">
+                        <legend>进程执行状态</legend>
+                    </fieldset>
+                    <div id="state" style="margin-left: 5%;height: 220px; width: 460px;overflow:auto;">
+                    </div>
+                </div>
+                
+                </div>
+                <!-- 进程列表 -->
+                <div style="height: 45%;width:95%;margin-left: auto;margin-right: auto;background-color: rgb(255, 255, 255);flex-direction: column;border-radius:15px ; ">
+                    <div style="height: 100%;display: flex;flex-direction: column;">
+                        <fieldset class="layui-elem-field layui-field-title " style="width: 95%; margin-left: 1.1%; ">
+                            <legend>进程列表</legend>
+
+                        </fieldset>
+                        <table id="process_list">
+                            <tr>
+                                <th>进程ID</th>
+                                <th>运行状态</th>
+                                <th>内存</th>
+                                <th>优先级</th>
+                                <th>调度策略</th>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="renderer/index.js"></script>
+<script src="renderer/listen.js"></script>
+
+</html>

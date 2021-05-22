@@ -1,0 +1,5 @@
+﻿  process.cpp
+D:\C++\os\os\process.cpp(274,21): warning C4018: “<”: 有符号/无符号不匹配
+D:\C++\os\os\process.cpp(303,57): warning C4018: “<”: 有符号/无符号不匹配
+D:\C++\os\os\process.cpp(759,22): warning C4018: “<”: 有符号/无符号不匹配
+  os.vcxproj -> D:\C++\os\Debug\os.exe
