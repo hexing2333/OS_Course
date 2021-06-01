@@ -70153,3 +70153,2266 @@ pid	state	占用内存	优先级	调度策略
 2	End	2	2	RR
 
 
+
+当前CPU时间： 0
+pid	state	占用内存	优先级	调度策略
+1	Ready	2	10	PRO
+2	Ready	2	6	PRO
+3	Ready	2	1	PRO
+
+
+
+当前CPU时间： 1
+pid	state	占用内存	优先级	调度策略
+1	Running	2	11	PRO
+2	Ready	2	7	PRO
+3	Ready	2	2	PRO
+
+
+
+当前CPU时间： 2
+pid	state	占用内存	优先级	调度策略
+1	Running	2	8	PRO
+2	Ready	2	8	PRO
+3	Ready	2	3	PRO
+
+
+
+当前CPU时间： 3
+pid	state	占用内存	优先级	调度策略
+1	Ready	2	5	PRO
+2	Running	2	9	PRO
+3	Ready	2	4	PRO
+
+
+
+当前CPU时间： 4
+pid	state	占用内存	优先级	调度策略
+1	Ready	2	6	PRO
+2	Running	2	6	PRO
+3	Ready	2	5	PRO
+
+
+
+当前CPU时间： 5
+pid	state	占用内存	优先级	调度策略
+1	Running	2	7	PRO
+2	Ready	2	3	PRO
+3	Ready	2	6	PRO
+
+
+
+当前CPU时间： 6
+pid	state	占用内存	优先级	调度策略
+1	Ready	2	4	PRO
+2	Ready	2	4	PRO
+3	Running	2	7	PRO
+
+
+
+当前CPU时间： 7
+pid	state	占用内存	优先级	调度策略
+1	Ready	2	5	PRO
+2	Running	2	5	PRO
+3	Ready	2	4	PRO
+
+
+
+当前CPU时间： 8
+pid	state	占用内存	优先级	调度策略
+1	Running	2	6	PRO
+2	Ready	2	2	PRO
+3	Ready	2	5	PRO
+
+
+
+当前CPU时间： 9
+pid	state	占用内存	优先级	调度策略
+1	Ready	2	3	PRO
+2	Ready	2	3	PRO
+3	Running	2	6	PRO
+
+
+
+当前CPU时间： 10
+pid	state	占用内存	优先级	调度策略
+1	Ready	2	4	PRO
+2	Running	2	4	PRO
+3	Ready	2	3	PRO
+
+
+
+当前CPU时间： 11
+pid	state	占用内存	优先级	调度策略
+1	Running	2	5	PRO
+2	Ready	2	1	PRO
+3	Ready	2	4	PRO
+
+
+
+当前CPU时间： 12
+pid	state	占用内存	优先级	调度策略
+1	Ready	2	2	RR
+2	Ready	2	2	RR
+3	Running	2	5	RR
+
+
+
+当前CPU时间： 13
+pid	state	占用内存	优先级	调度策略
+1	Ready	2	2	RR
+2	Running	2	2	RR
+3	Ready	2	5	RR
+
+
+
+当前CPU时间： 14
+pid	state	占用内存	优先级	调度策略
+1	Running	2	2	RR
+2	Ready	2	2	RR
+3	Ready	2	5	RR
+
+
+
+当前CPU时间： 15
+pid	state	占用内存	优先级	调度策略
+1	Ready	2	2	RR
+2	Ready	2	2	RR
+3	Running	2	5	RR
+
+
+
+当前CPU时间： 16
+pid	state	占用内存	优先级	调度策略
+1	Ready	2	2	RR
+2	Running	2	2	RR
+3	Ready	2	5	RR
+
+
+
+当前CPU时间： 17
+pid	state	占用内存	优先级	调度策略
+1	Running	2	2	RR
+2	Ready	2	2	RR
+3	Ready	2	5	RR
+
+
+
+当前CPU时间： 18
+pid	state	占用内存	优先级	调度策略
+1	Running	2	2	FCFS
+2	Ready	2	2	FCFS
+3	Ready	2	5	FCFS
+
+
+
+当前CPU时间： 19
+pid	state	占用内存	优先级	调度策略
+1	Running	2	2	FCFS
+2	Ready	2	2	FCFS
+3	Ready	2	5	FCFS
+
+
+
+当前CPU时间： 20
+pid	state	占用内存	优先级	调度策略
+1	Running	2	2	FCFS
+2	Ready	2	2	FCFS
+3	Ready	2	5	FCFS
+
+
+
+当前CPU时间： 21
+pid	state	占用内存	优先级	调度策略
+1	Running	2	2	FCFS
+2	Ready	2	2	FCFS
+3	Ready	2	5	FCFS
+
+
+
+当前CPU时间： 22
+pid	state	占用内存	优先级	调度策略
+1	Running	2	2	FCFS
+2	Ready	2	2	FCFS
+3	Ready	2	5	FCFS
+
+
+
+当前CPU时间： 23
+pid	state	占用内存	优先级	调度策略
+1	Running	2	2	FCFS
+2	Ready	2	2	FCFS
+3	Ready	2	5	FCFS
+
+
+
+当前CPU时间： 24
+pid	state	占用内存	优先级	调度策略
+1	Running	2	2	FCFS
+2	Ready	2	2	FCFS
+3	Ready	2	5	FCFS
+
+
+
+当前CPU时间： 25
+pid	state	占用内存	优先级	调度策略
+1	Running	2	2	FCFS
+2	Ready	2	2	FCFS
+3	Ready	2	5	FCFS
+
+
+
+当前CPU时间： 26
+pid	state	占用内存	优先级	调度策略
+1	Running	2	2	FCFS
+2	Ready	2	2	FCFS
+3	Ready	2	5	FCFS
+
+
+
+当前CPU时间： 27
+pid	state	占用内存	优先级	调度策略
+1	Running	2	2	FCFS
+2	Ready	2	2	FCFS
+3	Ready	2	5	FCFS
+
+
+
+当前CPU时间： 28
+pid	state	占用内存	优先级	调度策略
+1	Running	2	2	FCFS
+2	Ready	2	2	FCFS
+3	Ready	2	5	FCFS
+
+
+
+当前CPU时间： 29
+pid	state	占用内存	优先级	调度策略
+1	Running	2	2	FCFS
+2	Ready	2	2	FCFS
+3	Ready	2	5	FCFS
+
+
+
+当前CPU时间： 30
+pid	state	占用内存	优先级	调度策略
+1	Running	2	2	FCFS
+2	Ready	2	2	FCFS
+3	Ready	2	5	FCFS
+
+
+
+当前CPU时间： 31
+pid	state	占用内存	优先级	调度策略
+1	Ready	2	2	FCFS
+2	Ready	2	2	FCFS
+3	Ready	2	5	FCFS
+
+
+
+当前CPU时间： 32
+pid	state	占用内存	优先级	调度策略
+1	End	2	2	FCFS
+2	Ready	2	2	FCFS
+3	Running	2	5	FCFS
+
+
+
+当前CPU时间： 33
+pid	state	占用内存	优先级	调度策略
+1	End	2	2	FCFS
+2	Ready	2	2	FCFS
+3	Running	2	5	FCFS
+
+
+
+当前CPU时间： 34
+pid	state	占用内存	优先级	调度策略
+1	End	2	2	FCFS
+2	Ready	2	2	FCFS
+3	Running	2	5	FCFS
+
+
+
+当前CPU时间： 35
+pid	state	占用内存	优先级	调度策略
+1	End	2	2	FCFS
+2	Ready	2	2	FCFS
+3	Running	2	5	FCFS
+
+
+
+当前CPU时间： 36
+pid	state	占用内存	优先级	调度策略
+1	End	2	2	FCFS
+2	Ready	2	2	FCFS
+3	Running	2	5	FCFS
+
+
+
+当前CPU时间： 37
+pid	state	占用内存	优先级	调度策略
+1	End	2	2	FCFS
+2	Ready	2	2	FCFS
+3	Running	2	5	FCFS
+
+
+
+当前CPU时间： 38
+pid	state	占用内存	优先级	调度策略
+1	End	2	2	FCFS
+2	Ready	2	2	FCFS
+3	Running	2	5	FCFS
+
+
+
+当前CPU时间： 39
+pid	state	占用内存	优先级	调度策略
+1	End	2	2	FCFS
+2	Ready	2	2	FCFS
+3	Running	2	5	FCFS
+
+
+
+当前CPU时间： 40
+pid	state	占用内存	优先级	调度策略
+1	End	2	2	FCFS
+2	Ready	2	2	FCFS
+3	Running	2	5	FCFS
+
+
+
+当前CPU时间： 41
+pid	state	占用内存	优先级	调度策略
+1	End	2	2	FCFS
+2	Ready	2	2	FCFS
+3	Running	2	5	FCFS
+
+
+
+当前CPU时间： 42
+pid	state	占用内存	优先级	调度策略
+1	End	2	2	FCFS
+2	Ready	2	2	FCFS
+3	Running	2	5	FCFS
+
+
+
+当前CPU时间： 43
+pid	state	占用内存	优先级	调度策略
+1	End	2	2	FCFS
+2	Ready	2	2	FCFS
+3	Running	2	5	FCFS
+
+
+
+当前CPU时间： 44
+pid	state	占用内存	优先级	调度策略
+1	End	2	2	FCFS
+2	Ready	2	2	FCFS
+3	Running	2	5	FCFS
+
+
+
+当前CPU时间： 45
+pid	state	占用内存	优先级	调度策略
+1	End	2	2	FCFS
+2	Ready	2	2	FCFS
+3	Running	2	5	FCFS
+
+
+
+当前CPU时间： 46
+pid	state	占用内存	优先级	调度策略
+1	End	2	2	FCFS
+2	Ready	2	2	FCFS
+3	Running	2	5	FCFS
+
+
+
+当前CPU时间： 47
+pid	state	占用内存	优先级	调度策略
+1	End	2	2	FCFS
+2	Ready	2	2	FCFS
+3	Running	2	5	FCFS
+
+
+
+当前CPU时间： 48
+pid	state	占用内存	优先级	调度策略
+1	End	2	2	FCFS
+2	Ready	2	2	FCFS
+3	Ready	2	5	FCFS
+
+
+
+当前CPU时间： 49
+pid	state	占用内存	优先级	调度策略
+1	End	2	2	FCFS
+2	Running	2	2	FCFS
+3	End	2	5	FCFS
+
+
+
+当前CPU时间： 50
+pid	state	占用内存	优先级	调度策略
+1	End	2	2	FCFS
+2	Running	2	2	FCFS
+3	End	2	5	FCFS
+
+
+
+当前CPU时间： 51
+pid	state	占用内存	优先级	调度策略
+1	End	2	2	FCFS
+2	Running	2	2	FCFS
+3	End	2	5	FCFS
+
+
+
+当前CPU时间： 52
+pid	state	占用内存	优先级	调度策略
+1	End	2	2	FCFS
+2	Running	2	2	FCFS
+3	End	2	5	FCFS
+
+
+
+当前CPU时间： 53
+pid	state	占用内存	优先级	调度策略
+1	End	2	2	FCFS
+2	Running	2	2	FCFS
+3	End	2	5	FCFS
+
+
+
+当前CPU时间： 54
+pid	state	占用内存	优先级	调度策略
+1	End	2	2	FCFS
+2	Running	2	2	FCFS
+3	End	2	5	FCFS
+
+
+
+当前CPU时间： 55
+pid	state	占用内存	优先级	调度策略
+1	End	2	2	FCFS
+2	Running	2	2	FCFS
+3	End	2	5	FCFS
+
+
+
+当前CPU时间： 56
+pid	state	占用内存	优先级	调度策略
+1	End	2	2	FCFS
+2	Running	2	2	FCFS
+3	End	2	5	FCFS
+
+
+
+当前CPU时间： 57
+pid	state	占用内存	优先级	调度策略
+1	End	2	2	FCFS
+2	Running	2	2	FCFS
+3	End	2	5	FCFS
+
+
+
+当前CPU时间： 58
+pid	state	占用内存	优先级	调度策略
+1	End	2	2	FCFS
+2	Running	2	2	FCFS
+3	End	2	5	FCFS
+
+
+
+当前CPU时间： 59
+pid	state	占用内存	优先级	调度策略
+1	End	2	2	FCFS
+2	Running	2	2	FCFS
+3	End	2	5	FCFS
+
+
+
+当前CPU时间： 60
+pid	state	占用内存	优先级	调度策略
+1	End	2	2	FCFS
+2	Running	2	2	FCFS
+3	End	2	5	FCFS
+
+
+
+当前CPU时间： 61
+pid	state	占用内存	优先级	调度策略
+1	End	2	2	FCFS
+2	Running	2	2	FCFS
+3	End	2	5	FCFS
+
+
+
+当前CPU时间： 62
+pid	state	占用内存	优先级	调度策略
+1	End	2	2	FCFS
+2	Running	2	2	FCFS
+3	End	2	5	FCFS
+
+
+
+当前CPU时间： 63
+pid	state	占用内存	优先级	调度策略
+1	End	2	2	FCFS
+2	Ready	2	2	FCFS
+3	End	2	5	FCFS
+
+
+
+当前CPU时间： 64
+pid	state	占用内存	优先级	调度策略
+1	End	2	2	FCFS
+2	End	2	2	FCFS
+3	End	2	5	FCFS
+
+
+
+当前CPU时间： 65
+pid	state	占用内存	优先级	调度策略
+1	End	2	2	FCFS
+2	End	2	2	FCFS
+3	End	2	5	FCFS
+
+
+
+当前CPU时间： 66
+pid	state	占用内存	优先级	调度策略
+1	End	2	2	FCFS
+2	End	2	2	FCFS
+3	End	2	5	FCFS
+
+
+
+当前CPU时间： 67
+pid	state	占用内存	优先级	调度策略
+1	End	2	2	FCFS
+2	End	2	2	FCFS
+3	End	2	5	FCFS
+
+
+
+当前CPU时间： 68
+pid	state	占用内存	优先级	调度策略
+1	End	2	2	FCFS
+2	End	2	2	FCFS
+3	End	2	5	FCFS
+
+
+
+当前CPU时间： 69
+pid	state	占用内存	优先级	调度策略
+1	End	2	2	FCFS
+2	End	2	2	FCFS
+3	End	2	5	FCFS
+
+
+
+当前CPU时间： 0
+pid	state	占用内存	优先级	调度策略
+1	Ready	4	3	FCFS
+2	Ready	4	3	FCFS
+
+
+
+当前CPU时间： 1
+pid	state	占用内存	优先级	调度策略
+1	Block	4	3	FCFS
+2	Block	4	3	FCFS
+
+
+
+当前CPU时间： 2
+pid	state	占用内存	优先级	调度策略
+1	Block	4	3	FCFS
+2	Block	4	3	FCFS
+
+
+
+当前CPU时间： 3
+pid	state	占用内存	优先级	调度策略
+1	Block	4	3	FCFS
+2	Block	4	3	FCFS
+
+
+
+当前CPU时间： 4
+pid	state	占用内存	优先级	调度策略
+1	Block	4	3	FCFS
+2	Block	4	3	FCFS
+
+
+
+当前CPU时间： 5
+pid	state	占用内存	优先级	调度策略
+1	Block	4	3	FCFS
+2	Block	4	3	FCFS
+
+
+
+当前CPU时间： 6
+pid	state	占用内存	优先级	调度策略
+1	Block	4	3	FCFS
+2	Block	4	3	FCFS
+
+
+
+当前CPU时间： 7
+pid	state	占用内存	优先级	调度策略
+1	Block	4	3	FCFS
+2	Block	4	3	FCFS
+
+
+
+当前CPU时间： 8
+pid	state	占用内存	优先级	调度策略
+1	Block	4	3	FCFS
+2	Block	4	3	FCFS
+3	Ready	4	3	FCFS
+
+
+
+当前CPU时间： 9
+pid	state	占用内存	优先级	调度策略
+1	Block	4	3	FCFS
+2	Block	4	3	FCFS
+3	Running	4	3	FCFS
+
+
+
+当前CPU时间： 10
+pid	state	占用内存	优先级	调度策略
+1	Block	4	3	FCFS
+2	Block	4	3	FCFS
+3	Running	4	3	FCFS
+
+
+
+当前CPU时间： 11
+pid	state	占用内存	优先级	调度策略
+1	Block	4	3	FCFS
+2	Block	4	3	FCFS
+3	Running	4	3	FCFS
+
+
+
+当前CPU时间： 12
+pid	state	占用内存	优先级	调度策略
+1	Block	4	3	FCFS
+2	Block	4	3	FCFS
+3	Running	4	3	FCFS
+
+
+
+当前CPU时间： 13
+pid	state	占用内存	优先级	调度策略
+1	Block	4	3	FCFS
+2	Block	4	3	FCFS
+3	Running	4	3	FCFS
+
+
+
+当前CPU时间： 14
+pid	state	占用内存	优先级	调度策略
+1	Block	4	3	FCFS
+2	Block	4	3	FCFS
+3	Running	4	3	FCFS
+
+
+
+当前CPU时间： 15
+pid	state	占用内存	优先级	调度策略
+1	Block	4	3	FCFS
+2	Block	4	3	FCFS
+3	Running	4	3	FCFS
+
+
+
+当前CPU时间： 16
+pid	state	占用内存	优先级	调度策略
+1	Block	4	3	FCFS
+2	Block	4	3	FCFS
+3	Running	4	3	FCFS
+
+
+
+当前CPU时间： 17
+pid	state	占用内存	优先级	调度策略
+1	Block	4	3	FCFS
+2	Block	4	3	FCFS
+3	Running	4	3	FCFS
+
+
+
+当前CPU时间： 18
+pid	state	占用内存	优先级	调度策略
+1	Block	4	3	FCFS
+2	Block	4	3	FCFS
+3	Running	4	3	FCFS
+
+
+
+当前CPU时间： 19
+pid	state	占用内存	优先级	调度策略
+1	Block	4	3	FCFS
+2	Block	4	3	FCFS
+3	Ready	4	3	FCFS
+
+
+
+当前CPU时间： 20
+pid	state	占用内存	优先级	调度策略
+1	Block	4	3	FCFS
+2	Block	4	3	FCFS
+3	End	4	3	FCFS
+
+
+
+当前CPU时间： 0
+pid	state	占用内存	优先级	调度策略
+1	Ready	4	3	FCFS
+2	Ready	4	3	FCFS
+
+
+
+当前CPU时间： 1
+pid	state	占用内存	优先级	调度策略
+1	Block	4	3	FCFS
+2	Block	4	3	FCFS
+
+
+
+当前CPU时间： 2
+pid	state	占用内存	优先级	调度策略
+1	Block	4	3	FCFS
+2	Block	4	3	FCFS
+
+
+
+当前CPU时间： 3
+pid	state	占用内存	优先级	调度策略
+1	Block	4	3	FCFS
+2	Block	4	3	FCFS
+
+
+
+当前CPU时间： 4
+pid	state	占用内存	优先级	调度策略
+1	Block	4	3	FCFS
+2	Block	4	3	FCFS
+
+
+
+当前CPU时间： 5
+pid	state	占用内存	优先级	调度策略
+1	Block	4	3	FCFS
+2	Block	4	3	FCFS
+
+
+
+当前CPU时间： 6
+pid	state	占用内存	优先级	调度策略
+1	Block	4	3	FCFS
+2	Block	4	3	FCFS
+
+
+
+当前CPU时间： 7
+pid	state	占用内存	优先级	调度策略
+1	Block	4	3	FCFS
+2	Block	4	3	FCFS
+
+
+
+当前CPU时间： 8
+pid	state	占用内存	优先级	调度策略
+1	Suspend	0	3	FCFS
+2	Block	4	3	FCFS
+3	Ready	4	3	FCFS
+
+
+
+当前CPU时间： 9
+pid	state	占用内存	优先级	调度策略
+1	Suspend	0	3	FCFS
+2	Block	4	3	FCFS
+3	Running	4	3	FCFS
+
+
+
+当前CPU时间： 10
+pid	state	占用内存	优先级	调度策略
+1	Suspend	0	3	FCFS
+2	Block	4	3	FCFS
+3	Running	4	3	FCFS
+
+
+
+当前CPU时间： 0
+pid	state	占用内存	优先级	调度策略
+1	Ready	4	3	FCFS
+2	Ready	4	3	FCFS
+
+
+
+当前CPU时间： 1
+pid	state	占用内存	优先级	调度策略
+1	Block	4	3	FCFS
+2	Block	4	3	FCFS
+
+
+
+当前CPU时间： 2
+pid	state	占用内存	优先级	调度策略
+1	Block	4	3	FCFS
+2	Block	4	3	FCFS
+
+
+
+当前CPU时间： 3
+pid	state	占用内存	优先级	调度策略
+1	Block	4	3	FCFS
+2	Block	4	3	FCFS
+
+
+
+当前CPU时间： 4
+pid	state	占用内存	优先级	调度策略
+1	Block	4	3	FCFS
+2	Block	4	3	FCFS
+
+
+
+当前CPU时间： 5
+pid	state	占用内存	优先级	调度策略
+1	Block	4	3	FCFS
+2	Block	4	3	FCFS
+
+
+
+当前CPU时间： 6
+pid	state	占用内存	优先级	调度策略
+1	Block	4	3	FCFS
+2	Block	4	3	FCFS
+
+
+
+当前CPU时间： 7
+pid	state	占用内存	优先级	调度策略
+1	Block	4	3	FCFS
+2	Block	4	3	FCFS
+
+
+
+当前CPU时间： 8
+pid	state	占用内存	优先级	调度策略
+1	Suspend	0	3	FCFS
+2	Block	4	3	FCFS
+3	Ready	4	3	FCFS
+
+
+
+当前CPU时间： 9
+pid	state	占用内存	优先级	调度策略
+1	Suspend	0	3	FCFS
+2	Block	4	3	FCFS
+3	Running	4	3	FCFS
+
+
+
+当前CPU时间： 10
+pid	state	占用内存	优先级	调度策略
+1	Suspend	0	3	FCFS
+2	Block	4	3	FCFS
+3	Running	4	3	FCFS
+
+
+
+当前CPU时间： 11
+pid	state	占用内存	优先级	调度策略
+1	Suspend	0	3	FCFS
+2	Block	4	3	FCFS
+3	Running	4	3	FCFS
+
+
+
+当前CPU时间： 12
+pid	state	占用内存	优先级	调度策略
+1	Suspend	0	3	FCFS
+2	Block	4	3	FCFS
+3	Running	4	3	FCFS
+
+
+
+当前CPU时间： 13
+pid	state	占用内存	优先级	调度策略
+1	Suspend	0	3	FCFS
+2	Block	4	3	FCFS
+3	Running	4	3	FCFS
+
+
+
+当前CPU时间： 14
+pid	state	占用内存	优先级	调度策略
+1	Suspend	0	3	FCFS
+2	Block	4	3	FCFS
+3	Running	4	3	FCFS
+
+
+
+当前CPU时间： 15
+pid	state	占用内存	优先级	调度策略
+1	Suspend	0	3	FCFS
+2	Block	4	3	FCFS
+3	Running	4	3	FCFS
+
+
+
+当前CPU时间： 16
+pid	state	占用内存	优先级	调度策略
+1	Suspend	0	3	FCFS
+2	Block	4	3	FCFS
+3	Running	4	3	FCFS
+
+
+
+当前CPU时间： 17
+pid	state	占用内存	优先级	调度策略
+1	Suspend	0	3	FCFS
+2	Block	4	3	FCFS
+3	Running	4	3	FCFS
+
+
+
+当前CPU时间： 18
+pid	state	占用内存	优先级	调度策略
+1	Suspend	0	3	FCFS
+2	Block	4	3	FCFS
+3	Running	4	3	FCFS
+
+
+
+当前CPU时间： 19
+pid	state	占用内存	优先级	调度策略
+1	Suspend	0	3	FCFS
+2	Ready	4	3	FCFS
+3	Ready	4	3	FCFS
+
+
+
+当前CPU时间： 20
+pid	state	占用内存	优先级	调度策略
+1	Suspend	0	3	FCFS
+2	End	4	3	FCFS
+3	End	4	3	FCFS
+
+
+
+当前CPU时间： 21
+pid	state	占用内存	优先级	调度策略
+1	Suspend	0	3	FCFS
+2	End	4	3	FCFS
+3	End	4	3	FCFS
+
+
+
+当前CPU时间： 22
+pid	state	占用内存	优先级	调度策略
+1	Suspend	0	3	FCFS
+2	End	4	3	FCFS
+3	End	4	3	FCFS
+
+
+
+当前CPU时间： 23
+pid	state	占用内存	优先级	调度策略
+1	Suspend	0	3	FCFS
+2	End	4	3	FCFS
+3	End	4	3	FCFS
+
+
+
+当前CPU时间： 24
+pid	state	占用内存	优先级	调度策略
+1	Suspend	0	3	FCFS
+2	End	4	3	FCFS
+3	End	4	3	FCFS
+
+
+
+当前CPU时间： 25
+pid	state	占用内存	优先级	调度策略
+1	Suspend	0	3	FCFS
+2	End	4	3	FCFS
+3	End	4	3	FCFS
+
+
+
+当前CPU时间： 26
+pid	state	占用内存	优先级	调度策略
+1	Suspend	0	3	FCFS
+2	End	4	3	FCFS
+3	End	4	3	FCFS
+
+
+
+当前CPU时间： 27
+pid	state	占用内存	优先级	调度策略
+1	Suspend	0	3	FCFS
+2	End	4	3	FCFS
+3	End	4	3	FCFS
+
+
+
+当前CPU时间： 28
+pid	state	占用内存	优先级	调度策略
+1	Suspend	0	3	FCFS
+2	End	4	3	FCFS
+3	End	4	3	FCFS
+
+
+
+当前CPU时间： 29
+pid	state	占用内存	优先级	调度策略
+1	Suspend	0	3	FCFS
+2	End	4	3	FCFS
+3	End	4	3	FCFS
+
+
+
+当前CPU时间： 30
+pid	state	占用内存	优先级	调度策略
+1	Suspend	0	3	FCFS
+2	End	4	3	FCFS
+3	End	4	3	FCFS
+
+
+
+当前CPU时间： 31
+pid	state	占用内存	优先级	调度策略
+1	Suspend	0	3	FCFS
+2	End	4	3	FCFS
+3	End	4	3	FCFS
+
+
+
+当前CPU时间： 32
+pid	state	占用内存	优先级	调度策略
+1	Suspend	0	3	FCFS
+2	End	4	3	FCFS
+3	End	4	3	FCFS
+
+
+
+当前CPU时间： 33
+pid	state	占用内存	优先级	调度策略
+1	Suspend	0	3	FCFS
+2	End	4	3	FCFS
+3	End	4	3	FCFS
+
+
+
+当前CPU时间： 34
+pid	state	占用内存	优先级	调度策略
+1	Suspend	0	3	FCFS
+2	End	4	3	FCFS
+3	End	4	3	FCFS
+
+
+
+当前CPU时间： 35
+pid	state	占用内存	优先级	调度策略
+1	Suspend	0	3	FCFS
+2	End	4	3	FCFS
+3	End	4	3	FCFS
+
+
+
+当前CPU时间： 36
+pid	state	占用内存	优先级	调度策略
+1	Suspend	0	3	FCFS
+2	End	4	3	FCFS
+3	End	4	3	FCFS
+
+
+
+当前CPU时间： 37
+pid	state	占用内存	优先级	调度策略
+1	Suspend	0	3	FCFS
+2	End	4	3	FCFS
+3	End	4	3	FCFS
+
+
+
+当前CPU时间： 38
+pid	state	占用内存	优先级	调度策略
+1	Suspend	0	3	FCFS
+2	End	4	3	FCFS
+3	End	4	3	FCFS
+
+
+
+当前CPU时间： 39
+pid	state	占用内存	优先级	调度策略
+1	Suspend	0	3	FCFS
+2	End	4	3	FCFS
+3	End	4	3	FCFS
+
+
+
+当前CPU时间： 40
+pid	state	占用内存	优先级	调度策略
+1	Suspend	0	3	FCFS
+2	End	4	3	FCFS
+3	End	4	3	FCFS
+
+
+
+当前CPU时间： 41
+pid	state	占用内存	优先级	调度策略
+1	Suspend	0	3	FCFS
+2	End	4	3	FCFS
+3	End	4	3	FCFS
+
+
+
+当前CPU时间： 42
+pid	state	占用内存	优先级	调度策略
+1	Suspend	0	3	FCFS
+2	End	4	3	FCFS
+3	End	4	3	FCFS
+
+
+
+当前CPU时间： 43
+pid	state	占用内存	优先级	调度策略
+1	Suspend	0	3	FCFS
+2	End	4	3	FCFS
+3	End	4	3	FCFS
+
+
+
+当前CPU时间： 44
+pid	state	占用内存	优先级	调度策略
+1	Suspend	0	3	FCFS
+2	End	4	3	FCFS
+3	End	4	3	FCFS
+
+
+
+当前CPU时间： 45
+pid	state	占用内存	优先级	调度策略
+1	Suspend	0	3	FCFS
+2	End	4	3	FCFS
+3	End	4	3	FCFS
+
+
+
+当前CPU时间： 46
+pid	state	占用内存	优先级	调度策略
+1	Suspend	0	3	FCFS
+2	End	4	3	FCFS
+3	End	4	3	FCFS
+
+
+
+当前CPU时间： 47
+pid	state	占用内存	优先级	调度策略
+1	Suspend	0	3	FCFS
+2	End	4	3	FCFS
+3	End	4	3	FCFS
+
+
+
+当前CPU时间： 0
+pid	state	占用内存	优先级	调度策略
+1	Ready	4	3	PRO
+2	Ready	4	3	PRO
+
+
+
+当前CPU时间： 1
+pid	state	占用内存	优先级	调度策略
+1	Block	4	4	FCFS
+2	Block	4	4	FCFS
+
+
+
+当前CPU时间： 2
+pid	state	占用内存	优先级	调度策略
+1	Block	4	4	FCFS
+2	Block	4	4	FCFS
+
+
+
+当前CPU时间： 3
+pid	state	占用内存	优先级	调度策略
+1	Block	4	4	FCFS
+2	Block	4	4	FCFS
+
+
+
+当前CPU时间： 4
+pid	state	占用内存	优先级	调度策略
+1	Block	4	4	FCFS
+2	Block	4	4	FCFS
+
+
+
+当前CPU时间： 5
+pid	state	占用内存	优先级	调度策略
+1	Block	4	4	FCFS
+2	Block	4	4	FCFS
+
+
+
+当前CPU时间： 6
+pid	state	占用内存	优先级	调度策略
+1	Block	4	4	FCFS
+2	Block	4	4	FCFS
+
+
+
+当前CPU时间： 7
+pid	state	占用内存	优先级	调度策略
+1	Block	4	4	FCFS
+2	Block	4	4	FCFS
+
+
+
+当前CPU时间： 8
+pid	state	占用内存	优先级	调度策略
+1	Suspend	0	4	FCFS
+2	Block	4	4	FCFS
+3	Ready	4	3	FCFS
+
+
+
+当前CPU时间： 9
+pid	state	占用内存	优先级	调度策略
+1	Suspend	0	4	FCFS
+2	Block	4	4	FCFS
+3	Running	4	3	FCFS
+
+
+
+当前CPU时间： 10
+pid	state	占用内存	优先级	调度策略
+1	Suspend	0	4	FCFS
+2	Block	4	4	FCFS
+3	Running	4	3	FCFS
+
+
+
+当前CPU时间： 11
+pid	state	占用内存	优先级	调度策略
+1	Suspend	0	4	FCFS
+2	Block	4	4	FCFS
+3	Running	4	3	FCFS
+
+
+
+当前CPU时间： 12
+pid	state	占用内存	优先级	调度策略
+1	Suspend	0	4	FCFS
+2	Block	4	4	FCFS
+3	Running	4	3	FCFS
+
+
+
+当前CPU时间： 13
+pid	state	占用内存	优先级	调度策略
+1	Suspend	0	4	FCFS
+2	Block	4	4	FCFS
+3	Running	4	3	FCFS
+
+
+
+当前CPU时间： 14
+pid	state	占用内存	优先级	调度策略
+1	Suspend	0	4	FCFS
+2	Block	4	4	FCFS
+3	Running	4	3	FCFS
+
+
+
+当前CPU时间： 15
+pid	state	占用内存	优先级	调度策略
+1	Suspend	0	4	FCFS
+2	Block	4	4	FCFS
+3	Running	4	3	FCFS
+
+
+
+当前CPU时间： 16
+pid	state	占用内存	优先级	调度策略
+1	Suspend	0	4	FCFS
+2	Block	4	4	FCFS
+3	Running	4	3	FCFS
+
+
+
+当前CPU时间： 17
+pid	state	占用内存	优先级	调度策略
+1	Suspend	0	4	FCFS
+2	Block	4	4	FCFS
+3	Running	4	3	FCFS
+
+
+
+当前CPU时间： 18
+pid	state	占用内存	优先级	调度策略
+1	Suspend	0	4	FCFS
+2	Block	4	4	FCFS
+3	Running	4	3	FCFS
+
+
+
+当前CPU时间： 19
+pid	state	占用内存	优先级	调度策略
+1	Suspend	0	4	FCFS
+2	Ready	4	4	FCFS
+3	Ready	4	3	FCFS
+
+
+
+当前CPU时间： 20
+pid	state	占用内存	优先级	调度策略
+1	Suspend	0	4	FCFS
+2	End	4	4	FCFS
+3	End	4	3	FCFS
+
+
+
+当前CPU时间： 21
+pid	state	占用内存	优先级	调度策略
+1	Suspend	0	4	FCFS
+2	End	4	4	FCFS
+3	End	4	3	FCFS
+
+
+
+当前CPU时间： 22
+pid	state	占用内存	优先级	调度策略
+1	Suspend	0	4	FCFS
+2	End	4	4	FCFS
+3	End	4	3	FCFS
+
+
+
+当前CPU时间： 23
+pid	state	占用内存	优先级	调度策略
+1	Suspend	0	4	FCFS
+2	End	4	4	FCFS
+3	End	4	3	FCFS
+
+
+
+当前CPU时间： 24
+pid	state	占用内存	优先级	调度策略
+1	Suspend	0	4	FCFS
+2	End	4	4	FCFS
+3	End	4	3	FCFS
+
+
+
+当前CPU时间： 25
+pid	state	占用内存	优先级	调度策略
+1	Suspend	0	4	FCFS
+2	End	4	4	FCFS
+3	End	4	3	FCFS
+
+
+
+当前CPU时间： 26
+pid	state	占用内存	优先级	调度策略
+1	Suspend	0	4	FCFS
+2	End	4	4	FCFS
+3	End	4	3	FCFS
+
+
+
+当前CPU时间： 27
+pid	state	占用内存	优先级	调度策略
+1	Suspend	0	4	FCFS
+2	End	4	4	FCFS
+3	End	4	3	FCFS
+
+
+
+当前CPU时间： 28
+pid	state	占用内存	优先级	调度策略
+1	Suspend	0	4	FCFS
+2	End	4	4	FCFS
+3	End	4	3	FCFS
+
+
+
+当前CPU时间： 29
+pid	state	占用内存	优先级	调度策略
+1	Suspend	0	4	FCFS
+2	End	4	4	FCFS
+3	End	4	3	FCFS
+
+
+
+当前CPU时间： 30
+pid	state	占用内存	优先级	调度策略
+1	Suspend	0	4	FCFS
+2	End	4	4	FCFS
+3	End	4	3	FCFS
+
+
+
+当前CPU时间： 31
+pid	state	占用内存	优先级	调度策略
+1	Suspend	0	4	FCFS
+2	End	4	4	FCFS
+3	End	4	3	FCFS
+
+
+
+当前CPU时间： 32
+pid	state	占用内存	优先级	调度策略
+1	Suspend	0	4	FCFS
+2	End	4	4	FCFS
+3	End	4	3	FCFS
+
+
+
+当前CPU时间： 33
+pid	state	占用内存	优先级	调度策略
+1	Suspend	0	4	FCFS
+2	End	4	4	FCFS
+3	End	4	3	FCFS
+
+
+
+当前CPU时间： 34
+pid	state	占用内存	优先级	调度策略
+1	Suspend	0	4	FCFS
+2	End	4	4	FCFS
+3	End	4	3	FCFS
+
+
+
+当前CPU时间： 35
+pid	state	占用内存	优先级	调度策略
+1	Suspend	0	4	FCFS
+2	End	4	4	FCFS
+3	End	4	3	FCFS
+
+
+
+当前CPU时间： 36
+pid	state	占用内存	优先级	调度策略
+1	Suspend	0	4	FCFS
+2	End	4	4	FCFS
+3	End	4	3	FCFS
+
+
+
+当前CPU时间： 37
+pid	state	占用内存	优先级	调度策略
+1	Suspend	0	4	FCFS
+2	End	4	4	FCFS
+3	End	4	3	FCFS
+
+
+
+当前CPU时间： 38
+pid	state	占用内存	优先级	调度策略
+1	Suspend	0	4	FCFS
+2	End	4	4	FCFS
+3	End	4	3	FCFS
+
+
+
+当前CPU时间： 39
+pid	state	占用内存	优先级	调度策略
+1	Suspend	0	4	FCFS
+2	End	4	4	FCFS
+3	End	4	3	FCFS
+
+
+
+当前CPU时间： 40
+pid	state	占用内存	优先级	调度策略
+1	Suspend	0	4	FCFS
+2	End	4	4	FCFS
+3	End	4	3	FCFS
+
+
+
+当前CPU时间： 41
+pid	state	占用内存	优先级	调度策略
+1	Suspend	0	4	FCFS
+2	End	4	4	FCFS
+3	End	4	3	FCFS
+
+
+
+当前CPU时间： 42
+pid	state	占用内存	优先级	调度策略
+1	Suspend	0	4	FCFS
+2	End	4	4	FCFS
+3	End	4	3	FCFS
+
+
+
+当前CPU时间： 43
+pid	state	占用内存	优先级	调度策略
+1	Suspend	0	4	FCFS
+2	End	4	4	FCFS
+3	End	4	3	FCFS
+
+
+
+当前CPU时间： 44
+pid	state	占用内存	优先级	调度策略
+1	Suspend	0	4	FCFS
+2	End	4	4	FCFS
+3	End	4	3	FCFS
+
+
+
+当前CPU时间： 45
+pid	state	占用内存	优先级	调度策略
+1	Suspend	0	4	FCFS
+2	End	4	4	FCFS
+3	End	4	3	FCFS
+
+
+
+当前CPU时间： 46
+pid	state	占用内存	优先级	调度策略
+1	Suspend	0	4	FCFS
+2	End	4	4	FCFS
+3	End	4	3	FCFS
+
+
+
+当前CPU时间： 47
+pid	state	占用内存	优先级	调度策略
+1	Suspend	0	4	FCFS
+2	End	4	4	FCFS
+3	End	4	3	FCFS
+
+
+
+当前CPU时间： 48
+pid	state	占用内存	优先级	调度策略
+1	Suspend	0	4	FCFS
+2	End	4	4	FCFS
+3	End	4	3	FCFS
+
+
+
+当前CPU时间： 49
+pid	state	占用内存	优先级	调度策略
+1	Suspend	0	4	FCFS
+2	End	4	4	FCFS
+3	End	4	3	FCFS
+
+
+
+当前CPU时间： 50
+pid	state	占用内存	优先级	调度策略
+1	Suspend	0	4	FCFS
+2	End	4	4	FCFS
+3	End	4	3	FCFS
+
+
+
+当前CPU时间： 51
+pid	state	占用内存	优先级	调度策略
+1	Suspend	0	4	FCFS
+2	End	4	4	FCFS
+3	End	4	3	FCFS
+
+
+
+当前CPU时间： 0
+pid	state	占用内存	优先级	调度策略
+1	Ready	2	3	FCFS
+2	Ready	2	3	FCFS
+
+
+
+当前CPU时间： 1
+pid	state	占用内存	优先级	调度策略
+1	Block	2	3	FCFS
+2	Block	2	3	FCFS
+
+
+
+当前CPU时间： 2
+pid	state	占用内存	优先级	调度策略
+1	Block	2	3	FCFS
+2	Block	2	3	FCFS
+
+
+
+当前CPU时间： 3
+pid	state	占用内存	优先级	调度策略
+1	Block	2	3	FCFS
+2	Block	2	3	FCFS
+
+
+
+当前CPU时间： 4
+pid	state	占用内存	优先级	调度策略
+1	Block	2	3	FCFS
+2	Block	2	3	FCFS
+
+
+
+当前CPU时间： 5
+pid	state	占用内存	优先级	调度策略
+1	Block	2	3	FCFS
+2	Block	2	3	FCFS
+
+
+
+当前CPU时间： 6
+pid	state	占用内存	优先级	调度策略
+1	Ready	2	3	FCFS
+2	Block	2	3	FCFS
+
+
+
+当前CPU时间： 7
+pid	state	占用内存	优先级	调度策略
+1	End	2	3	FCFS
+2	Block	2	3	FCFS
+
+
+
+当前CPU时间： 8
+pid	state	占用内存	优先级	调度策略
+1	End	2	3	FCFS
+2	Block	2	3	FCFS
+
+
+
+当前CPU时间： 9
+pid	state	占用内存	优先级	调度策略
+1	End	2	3	FCFS
+2	Block	2	3	FCFS
+
+
+
+当前CPU时间： 10
+pid	state	占用内存	优先级	调度策略
+1	End	2	3	FCFS
+2	Block	2	3	FCFS
+
+
+
+当前CPU时间： 11
+pid	state	占用内存	优先级	调度策略
+1	End	2	3	FCFS
+2	Ready	2	3	FCFS
+
+
+
+当前CPU时间： 12
+pid	state	占用内存	优先级	调度策略
+1	End	2	3	FCFS
+2	End	2	3	FCFS
+
+
+
+当前CPU时间： 13
+pid	state	占用内存	优先级	调度策略
+1	End	2	3	FCFS
+2	End	2	3	FCFS
+
+
+
+当前CPU时间： 14
+pid	state	占用内存	优先级	调度策略
+1	End	2	3	FCFS
+2	End	2	3	FCFS
+
+
+
+当前CPU时间： 15
+pid	state	占用内存	优先级	调度策略
+1	End	2	3	FCFS
+2	End	2	3	FCFS
+
+
+
+当前CPU时间： 16
+pid	state	占用内存	优先级	调度策略
+1	End	2	3	FCFS
+2	End	2	3	FCFS
+
+
+
+当前CPU时间： 17
+pid	state	占用内存	优先级	调度策略
+1	End	2	3	FCFS
+2	End	2	3	FCFS
+
+
+
+当前CPU时间： 18
+pid	state	占用内存	优先级	调度策略
+1	End	2	3	FCFS
+2	End	2	3	FCFS
+
+
+
+当前CPU时间： 19
+pid	state	占用内存	优先级	调度策略
+1	End	2	3	FCFS
+2	End	2	3	FCFS
+
+
+
+当前CPU时间： 20
+pid	state	占用内存	优先级	调度策略
+1	End	2	3	FCFS
+2	End	2	3	FCFS
+
+
+
+当前CPU时间： 21
+pid	state	占用内存	优先级	调度策略
+1	End	2	3	FCFS
+2	End	2	3	FCFS
+
+
+
+当前CPU时间： 22
+pid	state	占用内存	优先级	调度策略
+1	End	2	3	FCFS
+2	End	2	3	FCFS
+
+
+
+当前CPU时间： 23
+pid	state	占用内存	优先级	调度策略
+1	End	2	3	FCFS
+2	End	2	3	FCFS
+
+
+
+当前CPU时间： 24
+pid	state	占用内存	优先级	调度策略
+1	End	2	3	FCFS
+2	End	2	3	FCFS
+
+
+
+当前CPU时间： 25
+pid	state	占用内存	优先级	调度策略
+1	End	2	3	FCFS
+2	End	2	3	FCFS
+
+
+
+当前CPU时间： 0
+pid	state	占用内存	优先级	调度策略
+1	Ready	2	3	FCFS
+2	Ready	2	3	FCFS
+
+
+
+当前CPU时间： 1
+pid	state	占用内存	优先级	调度策略
+1	Block	2	3	FCFS
+2	Block	2	3	FCFS
+
+
+
+当前CPU时间： 2
+pid	state	占用内存	优先级	调度策略
+1	Block	2	3	FCFS
+2	Block	2	3	FCFS
+
+
+
+当前CPU时间： 3
+pid	state	占用内存	优先级	调度策略
+1	Block	2	3	FCFS
+2	Block	2	3	FCFS
+
+
+
+当前CPU时间： 4
+pid	state	占用内存	优先级	调度策略
+1	Block	2	3	FCFS
+2	Block	2	3	FCFS
+
+
+
+当前CPU时间： 5
+pid	state	占用内存	优先级	调度策略
+1	Block	2	3	FCFS
+2	Block	2	3	FCFS
+
+
+
+当前CPU时间： 6
+pid	state	占用内存	优先级	调度策略
+1	Ready	2	3	FCFS
+2	Block	2	3	FCFS
+
+
+
+当前CPU时间： 7
+pid	state	占用内存	优先级	调度策略
+1	End	2	3	FCFS
+2	Block	2	3	FCFS
+
+
+
+当前CPU时间： 8
+pid	state	占用内存	优先级	调度策略
+1	End	2	3	FCFS
+2	Block	2	3	FCFS
+
+
+
+当前CPU时间： 9
+pid	state	占用内存	优先级	调度策略
+1	End	2	3	FCFS
+2	Block	2	3	FCFS
+
+
+
+当前CPU时间： 10
+pid	state	占用内存	优先级	调度策略
+1	End	2	3	FCFS
+2	Block	2	3	FCFS
+
+
+
+当前CPU时间： 11
+pid	state	占用内存	优先级	调度策略
+1	End	2	3	FCFS
+2	Ready	2	3	FCFS
+
+
+
+当前CPU时间： 12
+pid	state	占用内存	优先级	调度策略
+1	End	2	3	FCFS
+2	End	2	3	FCFS
+
+
+
+当前CPU时间： 13
+pid	state	占用内存	优先级	调度策略
+1	End	2	3	FCFS
+2	End	2	3	FCFS
+
+
+
+当前CPU时间： 14
+pid	state	占用内存	优先级	调度策略
+1	End	2	3	FCFS
+2	End	2	3	FCFS
+
+
+
+当前CPU时间： 15
+pid	state	占用内存	优先级	调度策略
+1	End	2	3	FCFS
+2	End	2	3	FCFS
+
+
+
+当前CPU时间： 16
+pid	state	占用内存	优先级	调度策略
+1	End	2	3	FCFS
+2	End	2	3	FCFS
+
+
+
+当前CPU时间： 17
+pid	state	占用内存	优先级	调度策略
+1	End	2	3	FCFS
+2	End	2	3	FCFS
+
+
+
+当前CPU时间： 18
+pid	state	占用内存	优先级	调度策略
+1	End	2	3	FCFS
+2	End	2	3	FCFS
+
+
+
+当前CPU时间： 19
+pid	state	占用内存	优先级	调度策略
+1	End	2	3	FCFS
+2	End	2	3	FCFS
+
+
+
+当前CPU时间： 20
+pid	state	占用内存	优先级	调度策略
+1	End	2	3	FCFS
+2	End	2	3	FCFS
+
+
+
+当前CPU时间： 21
+pid	state	占用内存	优先级	调度策略
+1	End	2	3	FCFS
+2	End	2	3	FCFS
+
+
+
+当前CPU时间： 22
+pid	state	占用内存	优先级	调度策略
+1	End	2	3	FCFS
+2	End	2	3	FCFS
+
+
+
+当前CPU时间： 23
+pid	state	占用内存	优先级	调度策略
+1	End	2	3	FCFS
+2	End	2	3	FCFS
+
+
+
+当前CPU时间： 24
+pid	state	占用内存	优先级	调度策略
+1	End	2	3	FCFS
+2	End	2	3	FCFS
+
+
+
+当前CPU时间： 25
+pid	state	占用内存	优先级	调度策略
+1	End	2	3	FCFS
+2	End	2	3	FCFS
+
+
+
+当前CPU时间： 26
+pid	state	占用内存	优先级	调度策略
+1	End	2	3	FCFS
+2	End	2	3	FCFS
+
+
+
+当前CPU时间： 27
+pid	state	占用内存	优先级	调度策略
+1	End	2	3	FCFS
+2	End	2	3	FCFS
+
+
+
+当前CPU时间： 28
+pid	state	占用内存	优先级	调度策略
+1	End	2	3	FCFS
+2	End	2	3	FCFS
+
+
+
+当前CPU时间： 29
+pid	state	占用内存	优先级	调度策略
+1	End	2	3	FCFS
+2	End	2	3	FCFS
+
+
+
+当前CPU时间： 30
+pid	state	占用内存	优先级	调度策略
+1	End	2	3	FCFS
+2	End	2	3	FCFS
+
+
+
+当前CPU时间： 31
+pid	state	占用内存	优先级	调度策略
+1	End	2	3	FCFS
+2	End	2	3	FCFS
+
+
+
+当前CPU时间： 32
+pid	state	占用内存	优先级	调度策略
+1	End	2	3	FCFS
+2	End	2	3	FCFS
+
+
+
+当前CPU时间： 33
+pid	state	占用内存	优先级	调度策略
+1	End	2	3	FCFS
+2	End	2	3	FCFS
+
+
+
+当前CPU时间： 34
+pid	state	占用内存	优先级	调度策略
+1	End	2	3	FCFS
+2	End	2	3	FCFS
+
+
+
+当前CPU时间： 35
+pid	state	占用内存	优先级	调度策略
+1	End	2	3	FCFS
+2	End	2	3	FCFS
+
+
+
+当前CPU时间： 36
+pid	state	占用内存	优先级	调度策略
+1	End	2	3	FCFS
+2	End	2	3	FCFS
+
+
+
+当前CPU时间： 37
+pid	state	占用内存	优先级	调度策略
+1	End	2	3	FCFS
+2	End	2	3	FCFS
+
+
+
+当前CPU时间： 38
+pid	state	占用内存	优先级	调度策略
+1	End	2	3	FCFS
+2	End	2	3	FCFS
+
+
+
+当前CPU时间： 39
+pid	state	占用内存	优先级	调度策略
+1	End	2	3	FCFS
+2	End	2	3	FCFS
+
+
+
+当前CPU时间： 40
+pid	state	占用内存	优先级	调度策略
+1	End	2	3	FCFS
+2	End	2	3	FCFS
+
+
+
+当前CPU时间： 41
+pid	state	占用内存	优先级	调度策略
+1	End	2	3	FCFS
+2	End	2	3	FCFS
+
+
+
+当前CPU时间： 42
+pid	state	占用内存	优先级	调度策略
+1	End	2	3	FCFS
+2	End	2	3	FCFS
+
+
+
+当前CPU时间： 43
+pid	state	占用内存	优先级	调度策略
+1	End	2	3	FCFS
+2	End	2	3	FCFS
+
+
+
+当前CPU时间： 44
+pid	state	占用内存	优先级	调度策略
+1	End	2	3	FCFS
+2	End	2	3	FCFS
+
+
+
+当前CPU时间： 45
+pid	state	占用内存	优先级	调度策略
+1	End	2	3	FCFS
+2	End	2	3	FCFS
+
+
+
+当前CPU时间： 46
+pid	state	占用内存	优先级	调度策略
+1	End	2	3	FCFS
+2	End	2	3	FCFS
+
+
+
+当前CPU时间： 47
+pid	state	占用内存	优先级	调度策略
+1	End	2	3	FCFS
+2	End	2	3	FCFS
+
+
+
+当前CPU时间： 48
+pid	state	占用内存	优先级	调度策略
+1	End	2	3	FCFS
+2	End	2	3	FCFS
+
+
+
+当前CPU时间： 49
+pid	state	占用内存	优先级	调度策略
+1	End	2	3	FCFS
+2	End	2	3	FCFS
+
+
+
+当前CPU时间： 0
+pid	state	占用内存	优先级	调度策略
+1	Ready	2	2	FCFS
+2	Ready	2	2	FCFS
+
+
+
+当前CPU时间： 1
+pid	state	占用内存	优先级	调度策略
+1	Block	2	2	FCFS
+2	Block	2	2	FCFS
+
+
+
+当前CPU时间： 2
+pid	state	占用内存	优先级	调度策略
+1	Block	2	2	FCFS
+2	Block	2	2	FCFS
+
+
+
+当前CPU时间： 3
+pid	state	占用内存	优先级	调度策略
+1	Block	2	2	FCFS
+2	Block	2	2	FCFS
+
+
+
+当前CPU时间： 4
+pid	state	占用内存	优先级	调度策略
+1	Block	2	2	FCFS
+2	Block	2	2	FCFS
+
+
+
+当前CPU时间： 5
+pid	state	占用内存	优先级	调度策略
+1	Block	2	2	FCFS
+2	Block	2	2	FCFS
+
+
+
+当前CPU时间： 6
+pid	state	占用内存	优先级	调度策略
+1	Block	2	2	FCFS
+2	Ready	2	2	FCFS
+
+
+
+当前CPU时间： 7
+pid	state	占用内存	优先级	调度策略
+1	Block	2	2	FCFS
+2	Block	2	2	FCFS
+
+
+
+当前CPU时间： 8
+pid	state	占用内存	优先级	调度策略
+1	Block	2	2	FCFS
+2	Block	2	2	FCFS
+
+
+
+当前CPU时间： 9
+pid	state	占用内存	优先级	调度策略
+1	Block	2	2	FCFS
+2	Block	2	2	FCFS
+
+
+
+当前CPU时间： 10
+pid	state	占用内存	优先级	调度策略
+1	Block	2	2	FCFS
+2	Block	2	2	FCFS
+
+
+
+当前CPU时间： 11
+pid	state	占用内存	优先级	调度策略
+1	Ready	2	2	FCFS
+2	Block	2	2	FCFS
+
+
+
+当前CPU时间： 12
+pid	state	占用内存	优先级	调度策略
+1	End	2	2	FCFS
+2	Block	2	2	FCFS
+
+
+
+当前CPU时间： 13
+pid	state	占用内存	优先级	调度策略
+1	End	2	2	FCFS
+2	Block	2	2	FCFS
+
+
+
+当前CPU时间： 14
+pid	state	占用内存	优先级	调度策略
+1	End	2	2	FCFS
+2	Block	2	2	FCFS
+
+
+
+当前CPU时间： 15
+pid	state	占用内存	优先级	调度策略
+1	End	2	2	FCFS
+2	Ready	2	2	FCFS
+
+
+
+当前CPU时间： 16
+pid	state	占用内存	优先级	调度策略
+1	End	2	2	FCFS
+2	End	2	2	FCFS
+
+
+
+当前CPU时间： 17
+pid	state	占用内存	优先级	调度策略
+1	End	2	2	FCFS
+2	End	2	2	FCFS
+
+
+
+当前CPU时间： 18
+pid	state	占用内存	优先级	调度策略
+1	End	2	2	FCFS
+2	End	2	2	FCFS
+
+
+
+当前CPU时间： 19
+pid	state	占用内存	优先级	调度策略
+1	End	2	2	FCFS
+2	End	2	2	FCFS
+
+
+
+当前CPU时间： 20
+pid	state	占用内存	优先级	调度策略
+1	End	2	2	FCFS
+2	End	2	2	FCFS
+
+

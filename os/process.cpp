@@ -27,17 +27,14 @@ CPU cpu;
 FileSystem fs;
 
 
-list<PCB> PCBList;
-list<PCB> readyList;
-list<PCB> waitForMemoryList;
-list<PCB> waitForKeyBoardList;
-list<PCB> waitForPrintList;
-list<PCB> fileRead;
-list<PCB> fileWrite;
-list<PCB> blockList;
-list<PCB> deviceList;
-list<PCB> fileList;
-list<PCB> externalPCBList;
+list<PCB> PCBList;//总进程队列
+list<PCB> readyList;//就绪队列
+list<PCB> waitForMemoryList;//等待内存队列
+list<PCB> waitForKeyBoardList;//等待键盘队列
+list<PCB> waitForPrintList;//等待打印机队列
+list<PCB> blockList;//阻塞队列
+list<PCB> deviceList;//设备队列
+list<PCB> externalPCBList;//挂起进程队列
 
 
 void init() {
@@ -565,19 +562,15 @@ void LongTermScheduler(string filename) {
 
 
 void Interrupt(PCB& p, int reason) {
-
 	p.cpuState = KERNELMODE;//中断状态下 进程处于内核模式
 	cpu.PC = interruptTable[reason];//查询中断向量表 找到中断程序的入口程序(模拟)
-
 	//进程正常结束或遇到I/O阻塞等等进程进行切换时 需要保存上下文环境 将旧进程的状态保存在PCB中 新进程调入CPU
-
 	//如果是正常的进程占用时间片结束
 	if (reason == NORMAL_SWITCH) {
 		p.utime = -1;
 		p.program.pop_front();
 		cpu.pid = -1;
 		CPUbusy = false;
-		p.cpuState = USERMODE;
 		ready(p);
 	}
 	//抢占式进程切换 需要保存上一个进程已占用CPU时间(或者在总时间上减去已占用时间)
@@ -592,8 +585,6 @@ void Interrupt(PCB& p, int reason) {
 					if (alltime != 0) {
 						it->program.push_front("C " + to_string(alltime));
 					}
-					//it->state = TASK_READY;
-					//it->cpuState = USERMODE;
 					it->utime = -1;
 				}
 				it->cpuState = USERMODE;
@@ -606,12 +597,9 @@ void Interrupt(PCB& p, int reason) {
 	/*中期调度中断 保存占用设备时间等信息*/
 	if (reason == MIDTERM_SWITCH_OUT) {
 		cout << "Timer=" << Timer << " 进程pid=" << p.pid << "调出内存" << endl;
-		
 		medium_swap_out(p.pid);
-
 		if (isInK(p)) {
 			Kdelete(p);
-			p.type = KEYBOARD;
 			string s = p.program.front();
 			cout << "pid=" << p.pid << " wTime " << p.wtime.keyboardStartTime << endl;
 			if (p.wtime.keyboardStartTime != -1) {
@@ -639,12 +627,9 @@ void Interrupt(PCB& p, int reason) {
 			}
 		}
 		externalPCBList.push_back(p);
-		/*hexing add*/
-		p.cpuState = USERMODE;
 		changePCBList(p, TASK_SUSPEND_BLOCK);
 		blockdelete(p);
 	}
-
 	if (reason == MIDTERM_SWITCH_IN) {
 		medium_swap_in(p);
 		if (p.type == KEYBOARD) { //键盘阻塞
@@ -652,9 +637,7 @@ void Interrupt(PCB& p, int reason) {
 			p.mm->is_apply = true;
 			p.type = NOTBLOCK;
 			cout << "Timer=" << Timer << " 进程pid=" << p.pid << "调入内存" << endl;
-			cout << p.program.front() << endl;
 			readyList.push_back(p);
-			p.cpuState = USERMODE;
 			changePCBList(p, TASK_READY);
 		}
 		else if (p.type == PRINT) {
@@ -662,14 +645,12 @@ void Interrupt(PCB& p, int reason) {
 			p.mm->is_apply = true;
 			p.type = NOTBLOCK;
 			cout << "Timer=" << Timer << " 进程pid=" << p.pid << "调入内存" << endl;
-			cout << p.program.front() << endl;
 			readyList.push_back(p);
 			p.cpuState = USERMODE;
 			changePCBList(p, TASK_READY);
 		}
 		externaldelete(p);
 	}
-
 	/*以下内容为IO中断*/
 	if (reason == KEYBOARD_SWITCH_USE) {
 		//查找中断向量表 执行中断程序 保存中断状态
@@ -677,45 +658,37 @@ void Interrupt(PCB& p, int reason) {
 		waitForKeyBoardList.push_back(p);
 		waitForKeyBoard();  //执行键盘输入函数
 	}
-
 	if (reason == KEYBOARD_SWITCH_UNUSE) {
 		p.cpuState = USERMODE;
 		p.program.pop_front();
 		ready(p);
 		blockdelete(p);
 		waitForKeyBoardList.pop_front();
-
 		for (list<PCB>::iterator it = PCBList.begin(); it != PCBList.end(); ++it) {
 			if (it->pid == p.pid) {
 				it->program.pop_front();
 			}
 		}
-		//KeyBoardBusy = false;
 		DeviceControl('c', 'k', 'i', p.pid);
 		waitForKeyBoard();
 	}
-
-
 	if (reason == PRINT_SWITCH_USE) {
 		//查找中断向量表 执行中断程序 保存中断状态
 		block(p);
 		waitForPrintList.push_back(p);
 		waitForPrint();  //执行键盘输入函数
 	}
-
 	if (reason == PRINT_SWITCH_UNUSE) {
 		p.cpuState = USERMODE;
 		p.program.pop_front();
 		ready(p);
 		blockdelete(p);
 		waitForPrintList.pop_front();
-
 		for (list<PCB>::iterator it = PCBList.begin(); it != PCBList.end(); ++it) {
 			if (it->pid == p.pid) {
 				it->program.pop_front();
 			}
 		}
-		//printBusy = false;
 		DeviceControl('c', 'p', 'o', p.pid);
 		waitForPrint();
 	}
@@ -723,9 +696,7 @@ void Interrupt(PCB& p, int reason) {
 	if (reason == FILE_SWITCH_USE) {
 		block(p);
 		fileMutex[p.fs].waitForFileList.push_back(p);
-
 		cout << "push:" << fileMutex[p.fs].waitForFileList.back().fsState << endl;
-
 		waitForFile(p.fs);  //执行键盘输入函数
 	}
 	//结束写文件
@@ -738,8 +709,6 @@ void Interrupt(PCB& p, int reason) {
 		cout << p1.fs << endl;
 		string ff = p1.fs;
 		map<string, struct mutexInfo>::iterator it;
-		cout <<"dwadwd"<< fileMutex[p.fs].waitForFileList.front().fsState << fileMutex[p.fs].waitForFileList.back().fsState << endl;
-
 		for (it = fileMutex.begin(); it != fileMutex.end(); it++) {
 			cout << it->first << endl;
 			if (it->first == p.fs && it->second.isBusy == true) {
@@ -755,10 +724,8 @@ void Interrupt(PCB& p, int reason) {
 		}
 		waitForFile(ff);
 	}
-
 	if (reason == PAGE_FAULT) {
 		cout << "缺页中断" << endl;
-		//缺页中断 保存PC
 	}
 };
 
@@ -812,21 +779,16 @@ void Execute() {
 		if (it->prority > max) {
 			max = it->prority;
 		}
-		//这里有一个很恶心的bug 如果判断 it->prority>max 他判断不了 得用 it->prority-max>0
-
 	}//寻找readylist中的最高优先级
 	//执行就绪队列中排队的进程
 	for (list<PCB>::iterator it = readyList.begin(); it != readyList.end();) {
-		//PCB &firstP = readyList.front();
-		//cout<< it->program.front() << endl;
 		string s = it->program.front().substr(0, 1);
 		cout << "当前指令:" << s << endl;
 		if (s == "C") {  //如果指令是C，说明需要占用CPU
 			if (!CPUbusy) {  //如果当前CPU中并无进程在运行,则安排firstP
 				CPUScheduler(*it);  //第一个是CPU计算
 				readyList.erase(it++);
-			}
-			else {
+			}else {
 				//如果有进程在运行，则需要根据调度算法来进行进程的替换
 				//这里写各种调度算法运行的结果
 				//抢占式动态优先级，SJF，每执行一次优先级下降3，等待一次优先级上升1
@@ -834,30 +796,22 @@ void Execute() {
 					for (list<PCB>::iterator it1 = PCBList.begin(); it1 != PCBList.end(); ++it1) {
 						if (it1->state == TASK_RUNNING) {
 							if (it1->prority >= max) {
-								//CPUScheduler(*it);
-								//addPrority();
 								it++;
 								break;
-							}
-							else {
+							}else {
 								if (it->prority == max) {
 									/*抢占CPU 需要中断*/
 									Interrupt(*it1, PREEMPTION_SWITCH);
 									CPUScheduler(*it);
 									readyList.erase(it++);
-								}
-								else {
+								}else {
 									it++;
 								}
-
-								//addPrority();
 							}
 							break;
 						}
 					}
-					//break;
-				}
-				else if (policy == SCHED_RR) {
+				}else if (policy == SCHED_RR) {
 					for (list<PCB>::iterator it1 = PCBList.begin(); it1 != PCBList.end(); ++it1) {
 						if (it1->state == TASK_RUNNING) {
 							cout << "running" << endl;
@@ -868,29 +822,21 @@ void Execute() {
 						}
 					}
 					break;
-				}
-				else {
+				}else {
 					it++;
-					//break;
 				}
-				//break;
 			}
 		}
 		/*除了C之外的所有命令都执行中断，进入阻塞队列，进行相应的操作*/
-
 		else if (s == "K") {  //执行键盘输入
 			Interrupt(*it, KEYBOARD_SWITCH_USE);
 			readyList.erase(it++);
-			//break;
-
 		}
 		else if (s == "P") {  //执行打印机输出
 			Interrupt(*it, PRINT_SWITCH_USE);
 			readyList.erase(it++);
-			//break;
 		}
 		else if (s == "R") {  //执行文件读取
-		 //f.read("")
 			string filePath = it->program.front().substr(2, it->program.front().size() - 1);
 			string path, rtime;
 			stringstream input(filePath);
@@ -899,17 +845,12 @@ void Execute() {
 			if (fs.matchPath(path) == NULL) {
 				cout << "目录不存在，跳过该指令" << endl;
 				it->program.pop_front();
-			}
-			else {
+			}else {
 				it->fs = path;//此时进程访问文件的路径
 				it->fsState = "R";
 				Interrupt(*it, FILE_SWITCH_USE);
 				readyList.erase(it++);
 			}
-
-			//string s = fs.read(path);
-			//readyList.front().program.pop_front();
-			//break;
 		}
 		else if (s == "W") {  //执行文件写入
 			string filePath = it->program.front().substr(2, it->program.front().size() - 1);
@@ -918,20 +859,17 @@ void Execute() {
 			stringstream input(filePath);
 			input >> path >> wtime;
 			cout << "filePath:" << path << endl;
-
 			//此时path就是真实的路径 第一步要检测这个文件是否存在
 			if (fs.matchPath(path) == NULL) {
 				cout << "目录不存在，跳过该指令" << endl;
 				it->program.pop_front();
-			}
-			else {//如果在文件系统中找到了这个文件，那么第一步 看这个文件的互斥信号量是否为false（代表这个文件目前没有进程访问）
+			}else {//如果在文件系统中找到了这个文件，那么第一步 看这个文件的互斥信号量是否为false（代表这个文件目前没有进程访问）
 			 //查询map,看临界区是否有进程正在访问
 				it->fs = path;//此时进程访问文件的路径
 				it->fsState = "W";
 				Interrupt(*it, FILE_SWITCH_USE);
 				readyList.erase(it++);
 			}
-			//break;
 		}
 		else if (s == "Q") {  //进程正常结束退出
 			stop(*it);

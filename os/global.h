@@ -21,7 +21,7 @@ typedef int blockType;
 
 
 typedef struct mm_struct {
-	unsigned long task_size;
+	unsigned long task_size;//占用内存块数
 	unsigned long total_vm, locked_vm, shared_vm, exec_vm;
 	//用户态堆栈的页数，
 	unsigned long stack_vm, reserved_vm, def_flags, nr_ptes;
@@ -69,7 +69,7 @@ typedef struct task_struct {
 
 typedef struct mutexInfo {
 	bool isBusy;
-	list<PCB> waitForFileList;
+	list<PCB> waitForFileList;//等待文件队列
 };
 
 //当前CPU的各项状态
@@ -80,29 +80,25 @@ typedef struct CPU {
 
 
 
-PCB create(int blocks, int prority, list<string>temp);
-void applyForResource(PCB &p);
-bool applyForMemory(PCB &p);
-
-
-void releaseMemory(PCB &p);
-void running();
-void ready(PCB &p);
-void block(PCB &p);
-void stop(PCB &p);
-void suspend();
-void schedule();
-void checkState();
-void LongTermScheduler(string filename);
-void MidTermScheduler(int inOrOut);
-void CPUScheduler(PCB &p);
-void Execute();
-void updateTaskState();
+PCB create(int blocks, int prority, list<string>temp);//创建原语
+void applyForResource(PCB &p);//申请资源
+bool applyForMemory(PCB &p);//申请内存
+void releaseMemory(PCB &p);//释放内存
+void ready(PCB &p);//就绪原语
+void block(PCB &p);//阻塞原语
+void stop(PCB &p);//结束原语
+void suspend(PCB &p);//挂起原语
+void checkState();//输出各队列进程状态
+void LongTermScheduler(string filename);//长期调度程序
+void MidTermScheduler(int inOrOut);//中期调度程序
+void CPUScheduler(PCB &p);//短期调度程序
+void Execute();//执行函数
+void updateTaskState();//进程状态更新函数
 void changePCBList(PCB &p, int state);
 void blockdelete(PCB &p);
-void waitForKeyBoard();
-void waitForPrint();
-void Interrupt(PCB &p, int reason);
+void waitForKeyBoard();//键盘等待函数
+void waitForPrint();//打印机等待函数
+void Interrupt(PCB &p, int reason);//中断函数
 void printMemoryInfo();
 void initMemory();
 
@@ -137,7 +133,7 @@ Q  结束运行
  // #define TABLE_LEN 10
  // #define SEQ_LEN 100
  // #define PROCESS_NUM 33
-const int PHYSICAL_SIZE = 9;
+const int PHYSICAL_SIZE = 8;
 const int FRAMES_PER_PROCESS = 3;
 const int TABLE_LEN = 1000;
 const int SEQ_LEN = 100;
